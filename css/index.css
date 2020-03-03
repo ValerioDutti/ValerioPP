@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway&display=swap');
+
+:root {
+    --main-color: black;
+    font-family: 'Nunito Sans';
+}
+body {
+    max-width: 980px;
+    margin: auto;
+    background-image: url(../image/background.jpg);
+    background-position: center;
+    background-size: cover;
+    
+
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+}
+
+header .top-menu {
+    display: flex;
+    justify-content: center;
+    
+}
+
+header .top-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px;
+    padding: 5px
+}
+
+header .top-menu a:hover {
+    background-color: gray;
+    border: 1px
+}
+
+main .pictures img {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    main .pictures {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px
+    }
+}
