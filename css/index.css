@@ -7,6 +7,7 @@
 body {
     max-width: 980px;
     margin: auto;
+    background: no-repeat center center fixed;
     background-image: url(../image/background.jpg);
     background-position: center;
     background-size: cover;
@@ -16,39 +17,60 @@ body {
 h1 {
     margin: 0;
     padding: 0;
+    letter-spacing: 0.4em;
 }
 header h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     text-align: center;
+    margin-top: 20px;
+    
 }
 
 header p {
     text-align: center;
+    letter-spacing: 0.2em;
 }
 
-header .top-menu {
+.top-menu {
     display: flex;
     justify-content: center;
     
 }
 
-header .top-menu a {
+.top-menu a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--main-color);
     border: 1px;
-    padding: 5px
+    padding: 5px;
+    padding-right: 40px;
+    letter-spacing: 0.1em;
 }
 
-header .top-menu a:hover {
-    background-color: gray;
-    border: 1px
+.top-menu li {
+    display: inline-block;
+    padding: 0 5px;
 }
 
-main .pictures img {
+.top-menu li a:hover, .top-menu .current a {
+  color: #055e1f;
+  
+}
+
+.pictures img {
     display: block;
     width: 100%;
+    margin-top: 20px;
+}
+
+#gallery-menu {
+    max-width: 980px;
+    margin: auto;
+    background: no-repeat center center fixed;
+    background-image: url(../image/sfcov.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 @media (min-width: 800px) {
