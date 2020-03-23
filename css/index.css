@@ -80,3 +80,103 @@ header p {
         grid-gap: 20px
     }
 }
+
+#contacts p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+
+
+}
+
+.contact {
+    font-family: 'Nunito Sans';
+    margin-top: 100px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4f83e4;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Nunito Sans';
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(206, 220, 226);
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+#aboutMe {
+     max-width: 980px;
+    margin: auto;
+    background: no-repeat center center fixed;
+    background-image: url(../image/coverAbout.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.aboutText h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(40, 68, 40);
+}
+
+.aboutText p {
+    color: bisque;
+    text-align: justify;
+    padding: 100px;
+    justify-items: end;
+}
